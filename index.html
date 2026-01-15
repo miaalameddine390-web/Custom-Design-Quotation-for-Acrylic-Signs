@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Acrylic Sign Logo Custom Purchase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Pacifico&family=Sacramento&family=Parisienne&family=Italianno&family=La+Belle+Aurore&display=swap">
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 15px;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .product-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-header h1 {
+            color: #8a7355;
+            font-size: clamp(20px, 5vw, 32px);
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .base-spec {
+            color: #666;
+            font-size: clamp(12px, 3vw, 14px);
+            margin: 8px 0 15px;
+            padding: 8px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            max-width: 100%;
+            width: 100%;
+            line-height: 1.4;
+        }
+
+        .option-group {
+            max-width: 100%;
+            margin: 0 auto 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        .option-group h3 {
+            margin: 0 0 10px 0;
+            color: #8a7355;
+            font-size: clamp(16px, 4vw, 18px);
+            font-weight: 600;
+        }
+
+        .option-group label {
+            display: block;
+            margin: 8px 0;
+            font-size: clamp(14px, 3.5vw, 16px);
+            cursor: pointer;
+        }
+
+        .price-display {
+            font-size: clamp(20px, 6vw, 30px);
+            color: #ff4500;
+            margin: 20px auto;
+            font-weight: bold;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .buy-btn {
+            background: #1677ff;
+            color: white;
+            border: none;
+            padding: 12px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: clamp(15px, 4vw, 17px);
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto 30px;
+            transition: background 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background: #0d66d0;
+        }
+
+        .custom-preview-section {
+            max-width: 100%;
+            margin: 30px auto;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+
+        .custom-preview-section h2 {
+            color: #8a7355;
+            font-size: clamp(22px, 5vw, 28px);
+            margin-bottom: 15px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .custom-product-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .input-section {
+            flex: 1 1 100%;
+            min-width: 0;
+            padding: 0 15px 20px;
+        }
+
+        .font-select, .size-select {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: clamp(14px, 3vw, 16px);
+            border: 2px solid #d4b886;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            color: #8a7355;
+            background-color: white;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .size-select {
+            margin-bottom: 15px;
+        }
+
+        .font-select:focus, .size-select:focus {
+            outline: none;
+            border-color: #b8860b;
+            box-shadow: 0 0 8px rgba(184, 134, 11, 0.3);
+        }
+
+        .input-row {
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #d4b886;
+        }
+
+        .input-row:last-child {
+            border-bottom: none;
+            margin-bottom: 8px;
+        }
+
+        .input-row label {
+            display: block;
+            color: #8a7355;
+            margin-bottom: 6px;
+            font-size: clamp(14px, 3vw, 16px);
+            font-weight: 600;
+        }
+
+        .text-input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: clamp(16px, 3.5vw, 18px);
+            border: 2px solid #d4b886;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            resize: none;
+            height: 70px;
+            charset: UTF-8;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: #b8860b;
+            box-shadow: 0 0 8px rgba(184, 134, 11, 0.3);
+        }
+
+        .size-label {
+            margin-top: 8px !important;
+        }
+
+        .preview-section {
+            flex: 1 1 100%;
+            min-width: 0;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .preview-circle {
+            width: clamp(280px, 85vw, 500px);
+            height: clamp(280px, 85vw, 500px);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            padding: clamp(20px, 8vw, 40px) clamp(10px, 4vw, 20px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+            pointer-events: auto;
+        }
+
+        .preview-circle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            z-index: 2;
+            transition: all 0.6s ease;
+        }
+
+        .preview-circle::after {
+            content: '';
+            position: absolute;
+            top: 2.2%;
+            left: 2.2%;
+            right: 2.2%;
+            bottom: 2.2%;
+            border: clamp(7px, 2vw, 10px) solid transparent;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f9e4a6 0%, #d4af37 50%, #b8860b 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: 3;
+            transition: all 0.6s ease;
+        }
+
+        .preview-circle.neon-active::before {
+            border: clamp(5px, 1.6vw, 8px) solid #ffebcd;
+            box-shadow: 0 0 clamp(10px, 3vw, 15px) #ffd700, 
+                        0 0 clamp(20px, 6vw, 30px) #ffc107, 
+                        0 0 clamp(30px, 9vw, 45px) #ffb74d;
+        }
+
+        .preview-circle.neon-active::after {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffd700 50%, #ffc107 100%);
+        }
+
+        .preview-circle.neon-active {
+            background-color: white;
+            box-shadow: 0 0 clamp(30px, 8vw, 40px) rgba(255, 215, 0, 0.5),
+                        0 0 clamp(60px, 16vw, 80px) rgba(255, 183, 77, 0.4),
+                        0 0 clamp(90px, 24vw, 120px) rgba(255, 193, 7, 0.3);
+        }
+
+        .preview-text {
+            color: #b8860b;
+            text-align: center;
+            line-height: 1.4;
+            max-width: calc(100% - 20px);
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(10px, 4vw, 20px);
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 4;
+            transition: all 0.6s ease;
+        }
+
+        .preview-circle.neon-active .preview-text {
+            color: #ffd700;
+        }
+
+        /* 核心修复：移除强制覆盖的font-size，改为默认基础值，让脚本设置的行内样式优先级更高 */
+        .preview-line {
+            display: block;
+            transition: font-size 0.2s ease, color 0.6s ease;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: clip;
+            max-width: 100%;
+            unicode-range: U+0020-FFFF;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            /* 仅保留基础字号，脚本设置的行内样式会覆盖此值 */
+            font-size: 20px; 
+        }
+
+        /* 字体样式映射 */
+        .font-battipaglia { font-family: 'Great Vibes', cursive; }
+        .font-arial { font-family: Arial, sans-serif; }
+        .font-amsterdam { font-family: 'Pacifico', cursive; }
+        .font-sacramento { font-family: 'Sacramento', cursive; }
+        .font-parisienne { font-family: 'Parisienne', cursive; }
+        .font-italianno { font-family: 'Italianno', cursive; }
+        .font-labelleaurore { font-family: 'La Belle Aurore', cursive; }
+
+        @media (max-width: 768px) {
+            .product-header h1 { font-size: clamp(20px, 5vw, 24px); }
+            .price-display { font-size: clamp(20px, 5vw, 24px); }
+            
+            .preview-circle::before { border-width: 1px; }
+            .preview-circle::after {
+                top: 2.5%;
+                left: 2.5%;
+                right: 2.5%;
+                bottom: 2.5%;
+                border-width: clamp(6px, 1.8vw, 8px);
+            }
+            
+            .preview-circle.neon-active::before {
+                border-width: clamp(4px, 1.2vw, 6px);
+                box-shadow: 0 0 clamp(8px, 2vw, 10px) #ffd700, 
+                            0 0 clamp(16px, 4vw, 20px) #ffc107, 
+                            0 0 clamp(24px, 6vw, 30px) #ffb74d;
+            }
+            
+            .preview-circle.neon-active {
+                box-shadow: 0 0 clamp(20px, 5vw, 25px) rgba(255, 215, 0, 0.5),
+                            0 0 clamp(40px, 10vw, 50px) rgba(255, 183, 77, 0.4);
+            }
+            
+            .preview-text {
+                max-width: calc(100% - 10px);
+                gap: clamp(8px, 3vw, 15px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .preview-circle::after {
+                top: 2.7%;
+                left: 2.7%;
+                right: 2.7%;
+                bottom: 2.7%;
+                border-width: clamp(5px, 1.5vw, 7px);
+            }
+            
+            .preview-circle.neon-active::before {
+                border-width: clamp(3px, 1vw, 5px);
+                box-shadow: 0 0 clamp(6px, 1.6vw, 8px) #ffd700, 
+                            0 0 clamp(12px, 3vw, 15px) #ffc107;
+            }
+            
+            .preview-circle.neon-active {
+                box-shadow: 0 0 clamp(15px, 4vw, 20px) rgba(255, 215, 0, 0.5);
+            }
+            
+            .preview-text { gap: clamp(5px, 2vw, 10px); }
+            .option-group { padding: 12px; }
+            .option-group h3 { font-size: clamp(14px, 3.5vw, 16px); }
+            .option-group label { font-size: clamp(12px, 3vw, 14px); }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="product-header">
+            <h1>Acrylic Sign Logo Custom Purchase</h1>
+            <div class="base-spec">&#x2705; Standard Material: 5MM Clear Acrylic Base + 2MM Gold Acrylic Surface</div>
+        </div>
+
+        <div class="custom-preview-section">
+            <h2>Custom Text & Font Preview</h2>
+            <div class="custom-product-container">
+                <div class="input-section">
+                    <div class="input-row">
+                        <label>First Line / 第一行文字</label>
+                        <textarea id="customText1" class="text-input" placeholder="e.g. Nu-Health">Nu-Health</textarea>
+                        <label for="fontSelector1">Font for Line 1 / 第一行字体</label>
+                        <select id="fontSelector1" class="font-select">
+                            <option value="battipaglia" selected>Battipaglia</option>
+                            <option value="arial">Arial</option>
+                            <option value="amsterdam">Amsterdam</option>
+                            <option value="sacramento">Sacramento (飘逸手写)</option>
+                            <option value="parisienne">Parisienne (法式手写)</option>
+                            <option value="italianno">Italianno (意大利手写)</option>
+                            <option value="labelleaurore">La Belle Aurore (复古手写)</option>
+                        </select>
+                        <label for="sizeSelector1" class="size-label">Font Size (px) / 字号 (12-200)</label>
+                        <input type="number" id="sizeSelector1" class="size-select" min="12" max="200" value="75" placeholder="12-200">
+                    </div>
+
+                    <div class="input-row">
+                        <label>Second Line / 第二行文字</label>
+                        <textarea id="customText2" class="text-input" placeholder="e.g. &amp; Beauty">Beauty</textarea>
+                        <label for="fontSelector2">Font for Line 2 / 第二行字体</label>
+                        <select id="fontSelector2" class="font-select">
+                            <option value="battipaglia">Battipaglia</option>
+                            <option value="arial" selected>Arial</option>
+                            <option value="amsterdam">Amsterdam</option>
+                            <option value="sacramento">Sacramento (飘逸手写)</option>
+                            <option value="parisienne">Parisienne (法式手写)</option>
+                            <option value="italianno">Italianno (意大利手写)</option>
+                            <option value="labelleaurore">La Belle Aurore (复古手写)</option>
+                        </select>
+                        <label for="sizeSelector2" class="size-label">Font Size (px) / 字号 (12-200)</label>
+                        <input type="number" id="sizeSelector2" class="size-select" min="12" max="200" value="55" placeholder="12-200">
+                    </div>
+
+                    <p style="color: #8a7355; text-align: center; font-size: clamp(14px, 3vw, 16px);">Preview updates in real time / 输入后实时预览</p>
+                </div>
+
+                <div class="preview-section">
+                    <div class="preview-circle">
+                        <div class="preview-text">
+                            <span id="previewLine1" class="preview-line font-battipaglia">Nu-Health</span>
+                            <span id="previewLine2" class="preview-line font-arial">Beauty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="option-group">
+            <h3>1. Select Size (Diameter)</h3>
+            <label><input type="radio" name="size" value="40cm" data-base="325" data-neon="540" checked> 40cm</label>
+            <label><input type="radio" name="size" value="50cm" data-base="390" data-neon="648"> 50cm</label>
+            <label><input type="radio" name="size" value="60cm" data-base="455" data-neon="756"> 60cm</label>
+            <label><input type="radio" name="size" value="70cm" data-base="520" data-neon="864"> 70cm</label>
+            <label><input type="radio" name="size" value="80cm" data-base="585" data-neon="972"> 80cm</label>
+            <label><input type="radio" name="size" value="90cm" data-base="650" data-neon="1080"> 90cm</label>
+            <label><input type="radio" name="size" value="100cm" data-base="715" data-neon="1188"> 100cm</label>
+        </div>
+
+        <div class="option-group">
+            <h3>2. Optional Add-on (Extra Purchase)</h3>
+            <label><input type="radio" name="addon" value="no-neon" data-type="base" checked> No Neon Light (Original Price / 无灯带 - 基础价格)</label>
+            <label><input type="radio" name="addon" value="with-neon" data-type="neon"> With Neon Light Strip (Include Adapter) / 含霓虹灯带(带适配器)</label>
+        </div>
+
+        <div class="price-display">Total Price: $47.79</div>
+
+        <button class="buy-btn" onclick="goToOrder()">BUY NOW</button>
+    </div>
+
+    <script>
+        document.charset = "UTF-8";
+        document.characterSet = "UTF-8";
+        
+        const EXCHANGE_RATE = 6.8;
+        const sizeRadios = document.querySelectorAll('input[name="size"]');
+        const addonRadios = document.querySelectorAll('input[name="addon"]');
+        const priceDisplay = document.querySelector('.price-display');
+        const previewCircle = document.querySelector('.preview-circle');
+        
+        function calcTotalPrice() {
+            const selectedSize = document.querySelector('input[name="size"]:checked');
+            const selectedAddon = document.querySelector('input[name="addon"]:checked');
+            const priceType = selectedAddon.dataset.type;
+            const cnyPrice = parseFloat(selectedSize.dataset[priceType]);
+            const usdPrice = (cnyPrice / EXCHANGE_RATE).toFixed(2);
+            priceDisplay.textContent = `Total Price: $${usdPrice}`;
+        }
+
+        function toggleNeonEffect() {
+            const selectedAddon = document.querySelector('input[name="addon"]:checked');
+            if (selectedAddon.value === 'with-neon') {
+                previewCircle.classList.add('neon-active');
+            } else {
+                previewCircle.classList.remove('neon-active');
+            }
+        }
+
+        function goToOrder() {
+            const selectedSize = document.querySelector('input[name="size"]:checked').value;
+            const selectedAddon = document.querySelector('input[name="addon"]:checked').value;
+            const customText1 = document.getElementById('customText1').value.trim() || 'Nu-Health';
+            const customText2 = document.getElementById('customText2').value.trim() || 'Beauty';
+            
+            const config = selectedAddon === 'with-neon' ? 'With Neon Light(Adapter)' : 'No Neon Light';
+            const urlParams = new URLSearchParams({
+                size: selectedSize,
+                config: config,
+                text1: customText1,
+                text2: customText2,
+                font1: document.getElementById('fontSelector1').value,
+                font2: document.getElementById('fontSelector2').value,
+                size1: document.getElementById('sizeSelector1').value,
+                size2: document.getElementById('sizeSelector2').value
+            });
+            const url = `你的阿里国际站产品链接?${urlParams.toString()}`;
+            window.location.href = url;
+        }
+
+        const fontSelector1 = document.getElementById('fontSelector1');
+        const fontSelector2 = document.getElementById('fontSelector2');
+        const sizeSelector1 = document.getElementById('sizeSelector1');
+        const sizeSelector2 = document.getElementById('sizeSelector2');
+        const customText1 = document.getElementById('customText1');
+        const customText2 = document.getElementById('customText2');
+        const previewLine1 = document.getElementById('previewLine1');
+        const previewLine2 = document.getElementById('previewLine2');
+        const previewText = document.querySelector('.preview-text');
+        
+        const defaultLine1 = 'Nu-Health';
+        const defaultLine2 = 'Beauty';
+        const defaultSize1 = 75;
+        const defaultSize2 = 55;
+        const maxSize = 200;
+        const minSize = 12;
+
+        // 核心修复：确保字号更新逻辑生效，且行内样式优先级高于CSS
+        function updateLine1Style() {
+            const fontClasses = ['font-battipaglia', 'font-arial', 'font-amsterdam', 'font-sacramento', 'font-parisienne', 'font-italianno', 'font-labelleaurore'];
+            previewLine1.classList.remove(...fontClasses);
+            previewLine1.classList.add(`font-${fontSelector1.value}`);
+            // 强制转换为数字，避免非数字值导致失效
+            const fontSize = Math.max(minSize, Math.min(maxSize, Number(sizeSelector1.value) || defaultSize1));
+            // 用行内样式设置字号，优先级最高
+            previewLine1.style.fontSize = `${fontSize}px`;
+            previewLine1.style.lineHeight = fontSize > 120 ? '1.1' : '1.3';
+            adjustLineSpacing();
+        }
+
+        function updateLine2Style() {
+            const fontClasses = ['font-battipaglia', 'font-arial', 'font-amsterdam', 'font-sacramento', 'font-parisienne', 'font-italianno', 'font-labelleaurore'];
+            previewLine2.classList.remove(...fontClasses);
+            previewLine2.classList.add(`font-${fontSelector2.value}`);
+            const fontSize = Math.max(minSize, Math.min(maxSize, Number(sizeSelector2.value) || defaultSize2));
+            previewLine2.style.fontSize = `${fontSize}px`;
+            previewLine2.style.lineHeight = fontSize > 120 ? '1.1' : '1.3';
+            adjustLineSpacing();
+        }
+
+        function adjustLineSpacing() {
+            const size1 = Math.max(minSize, Math.min(maxSize, Number(sizeSelector1.value) || defaultSize1));
+            const size2 = Math.max(minSize, Math.min(maxSize, Number(sizeSelector2.value) || defaultSize2));
+            const avgSize = (size1 + size2) / 2;
+            
+            const spacing = Math.min(60, 20 + avgSize * 0.15);
+            previewText.style.gap = window.innerWidth <= 768 
+                ? `${Math.min(40, 15 + avgSize * 0.1)}px` 
+                : `${spacing}px`;
+        }
+
+        function updatePreviewText() {
+            previewLine1.textContent = customText1.value.trim() || defaultLine1;
+            previewLine2.textContent = customText2.value.trim() || defaultLine2;
+            // 修复：更新文字后重新计算字号（防止文字变更后字号丢失）
+            updateLine1Style();
+            updateLine2Style();
+            adjustLineSpacing();
+        }
+
+        // 绑定事件：确保输入框实时响应
+        sizeRadios.forEach(radio => radio.addEventListener('change', calcTotalPrice));
+        addonRadios.forEach(radio => {
+            radio.addEventListener('change', calcTotalPrice);
+            radio.addEventListener('change', toggleNeonEffect);
+        });
+
+        // 修复：增加input事件（实时输入实时更新），原仅绑定change事件会延迟
+        fontSelector1.addEventListener('change', updateLine1Style);
+        sizeSelector1.addEventListener('input', updateLine1Style);
+        sizeSelector1.addEventListener('change', updateLine1Style);
+        customText1.addEventListener('input', updatePreviewText);
+
+        fontSelector2.addEventListener('change', updateLine2Style);
+        sizeSelector2.addEventListener('input', updateLine2Style);
+        sizeSelector2.addEventListener('change', updateLine2Style);
+        customText2.addEventListener('input', updatePreviewText);
+
+        window.addEventListener('resize', () => {
+            adjustLineSpacing();
+            updateLine1Style();
+            updateLine2Style();
+        });
+        
+        window.addEventListener('orientationchange', () => {
+            setTimeout(() => {
+                adjustLineSpacing();
+                updateLine1Style();
+                updateLine2Style();
+            }, 300);
+        });
+
+        // 初始化：强制触发字号更新
+        calcTotalPrice();
+        updateLine1Style();
+        updateLine2Style();
+        updatePreviewText();
+        toggleNeonEffect();
+    </script>
+</body>
+</html>
